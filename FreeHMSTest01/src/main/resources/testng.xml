@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Fres HMS Test Suite" verbose="4">
+
+	<listeners>
+		<listener class-name="com.hms.qa.listeners.ExtentReportListener" /> 
+		<listener class-name="com.hms.qa.listeners.TestAllureListener" />
+<!-- 		<listener class-name="com.hms.qa.listeners.TesultsListener" /> -->
+	</listeners>
+
+	<test name="HMS Test">
+		<classes>
+			<class name="com.hms.qa.tests.LoginPageTest" />
+ 			<class name="com.hms.qa.tests.HomePageTest" /> 
+		</classes>
+	</test>
+</suite>
